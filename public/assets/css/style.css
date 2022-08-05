@@ -1,20 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
-
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(10, 10, 10);
-    font-family: 'Bebas Neue', sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Apercu Mono', sans-serif;  
 }
 
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.preloader{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: #fff;
+    
+}
+
+.container{ 
+    width: 100%;
+    height: 100vh;    
+}
+
+/*========== HEADER ==========*/
+
 header{
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(3, 3, 3);  
 }
 
 li{
-    font-size: 30px;
+    font-size: 15px;
     list-style: none;
 }
 
@@ -24,6 +49,8 @@ a{
 }
 
 .navbar{
+    position: relative;
+    z-index: 2;
     min-height: 100px;
     display: flex;
     justify-content: space-between;
@@ -40,7 +67,7 @@ a{
 }
 
 .nav-logo{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .nav-link{
@@ -63,122 +90,124 @@ a{
 }
 
 h1{
-    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
     position: relative;
     z-index: 2;
     color: rgb(255, 255, 255);
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 50;
-    width: 30%;
+    width: 100%;
     padding-top: 10%;
-    padding-left: 5%;
+    margin-bottom: 2%;
 } 
 
+.post{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-bottom: 5%;
+}
 
 h2{
-    background-color: rgba(0, 0, 0, 0);
     position: relative;
     z-index: 2;
     color: rgb(255, 255, 255);
-    font-size: 100px;
-    font-weight: 50;
-    width: 40%;
-    padding-top: 10%;
-    padding-left: 5%;
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    width: 80%;
+    margin-left: 5%;
 }
 
-h3{
-    font-size: 70px;
-}
-
-.projet{
+h4{
     position: relative;
-    z-index: 3;
-    width: 100%;
-    height: 80rem;
+    z-index: 2;
     color: rgb(255, 255, 255);
-    padding: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 50px;
+    width: 80%;
+    margin-left: 10%;
 }
 
-.effect{
-    margin-top: 10%;
-    position: relative;
-    max-width: 700px;
+h5{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 40px;
+    margin-bottom: 5%; 
 }
 
-.text{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    z-index: 6;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    font-size: 100px;
-    padding-top: 20%;
-    margin-left: 30%;
-}
-
-.text1{
-    background-color: rgba(255, 255, 255, 0);
-    width: 100%;
-    height: 100%;
-    font-size: 100px;
-    position: absolute;
-    top: 0;
-    z-index: 10;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    padding-top: 20%;
-    margin-left: 30%;
-}
-
-.img{
-    margin-left: 25%;
-    margin-right: 10%;
-    width: 60%;
-    height: 100%;
-}
-
-img{
-    position: relative;
-    z-index: 6;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-
-}
-
-.code{
-    position: absolute;
-    z-index: 1;
-    padding-top: 10%;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-size: 200px;
-    font-weight: bolder;
-    color: rgba(17, 17, 17, 0.267);
-}
-
-.welcome{
+.p1{
     color: white;
     position: relative;
     z-index: 3;
     text-align: center;
     font-size: 30px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
-.moi{
+#project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+ 
+.project{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    margin-top: 5%;
+    background-color: #fff;
+}
+
+.title-project{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 6;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    font-size: 50px;
+    margin-top: 20%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+#me{
+    background-color: rgba(0, 0, 0, 0.89);
+    height: 100vh;
+    margin-top: 5%;
+}
+
+.me{
+    position: relative;
+    z-index: 8;
     width: 90%;
     height: 20%;
     color: white;
     font-size: 40px;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding-left: 10%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Apercu Mono",sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    letter-spacing: -.4px;
+    margin-bottom: 30px;
+    margin-top: 5%;
 }
 
 .skills{
@@ -190,22 +219,45 @@ img{
     height: 40%;
     margin-top: 5%;
     
+    
 }
 
 .design{
-    text-align: center;
     width: 40%;
     color: white;
+    font-weight: 100;
     font-size: 40px;
-    margin-left: 5%;
+    display: block;
+    padding-right: 2%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Apercu Mono,sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    letter-spacing: -.4px;
+    margin-bottom: 30px;
 }
 
 .dev {
-    text-align: center;
     width: 40%;
     color: white;
     font-size: 40px;
-    margin-left: 5%;
+    display: block;
+    padding-left: 2%;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: Apercu Mono,sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    letter-spacing: -.4px;
+    margin-bottom: 30px;
+    
 }
 
 @media (max-width:768px) { 
@@ -260,16 +312,15 @@ img{
         font-weight: bolder;
         color: rgba(255, 255, 255, 0.03);
     }
-}
+} 
 /*--------------------- FOOTER ---------------------*/
 
 
-footer{
+ footer{
     position: relative;
     z-index: 3;
     border-top: 1px solid #fff;
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color: rgba(0, 0, 0, 0.89);
 }
 
 .social{
@@ -339,5 +390,5 @@ body:hover ~ .cursor{
 }
 
 body:hover ~ .cursor2{
-    opacity: 0;
+    opacity: 0; 
 }

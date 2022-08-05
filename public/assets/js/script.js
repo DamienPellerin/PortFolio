@@ -1,3 +1,9 @@
+setTimeout(()=> {
+document.querySelector('.preloader').style.display='none';
+}, 5000);
+
+
+
 let hamburger = document.querySelector(".hamburger");
 let navMenu = document.querySelector(".nav-menu");
 
