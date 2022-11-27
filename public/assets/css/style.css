@@ -84,7 +84,7 @@ header{
     width: 100%;
     height: 95vh;
     color: var(--black);
-    background-image:url('/Users/damien/Desktop/LA MANU/Potfolio/PortFolio/public/assets/img/A.jpeg');
+    background-image:url('/Users/damien/Desktop/PortFolio/public/assets/img/A.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
