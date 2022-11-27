@@ -84,7 +84,7 @@ header{
     width: 100%;
     height: 95vh;
     color: var(--black);
-    background-image:url('public/assets/img/acceuilpicture.png');
+    background-image:url('/Users/damien/Desktop/PortFolio/public/assets/img/acceuilpicture.png');
     background-repeat: no-repeat;
     background-size: cover;
 }Ò
